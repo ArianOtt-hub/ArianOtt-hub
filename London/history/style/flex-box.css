@@ -1,0 +1,56 @@
+.flex-box {
+
+    display:table;
+    flex-wrap: nowrap;
+    background-color: #333333;
+    width: auto;
+    height: auto;
+
+}
+
+.flex-box> div {
+
+    background-color: #7e7d7d;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    transition: 500ms;
+}
+.flex-box>div:hover{
+    background-color: white;
+    transition: 200ms;
+}
+img{
+    width: 1000px;
+    transition: 200ms;
+}
+img:hover{
+    width: 110%;
+    transition: 200ms;
+}
+@media only screen and (max-width: 1800px) {
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 400px;
+        height: 1300px;
+        filter: grayscale(100%) blur(1px);
+
+        transition: 500ms;
+    }
+    div.desc {
+        position: relative;
+        display: inline-block;
+
+        text-align: center;
+
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
